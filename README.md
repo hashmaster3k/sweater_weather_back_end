@@ -57,7 +57,7 @@ This will create your database, migrate the needed resources then seed the datab
 
 ## Setting up API
 
-Multiple APIs were used for this project. You may choose your own APIs, however some refactoring may be needed based on the returned results of said API. The APs used were:
+Multiple APIs were used for this project. You may choose your own APIs, however some refactoring may be needed based on the returned results of said API. The APIs used in this app are:
 
 - [MapQuest API](https://developer.mapquest.com/)
 - [OpenWeather](https://openweathermap.org/)
