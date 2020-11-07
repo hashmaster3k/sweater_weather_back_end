@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Coordinate do
-  it 'can create a coordinat object' do
+  it 'can create a coordinate object' do
     latitude = 25.0343
     longitude = 77.3963
     data = {
