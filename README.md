@@ -1,6 +1,7 @@
 # Sweater Weather Backend API
-![](https://img.shields.io/badge/Rails-5.2.4.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)    ![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)  ![](https://img.shields.io/badge/Code-HTML-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=1e90ff) ![](https://img.shields.io/badge/Code-CSS-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=1e90ff) 
-[![Build Status](https://travis-ci.com/hashmaster3k/viewing_party.svg?branch=main)](https://travis-ci.com/hashmaster3k/viewing_party) ![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg)
+![](https://img.shields.io/badge/Rails-5.2.4.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg)
 
 
 
