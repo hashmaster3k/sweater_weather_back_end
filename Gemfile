@@ -10,6 +10,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'json'
 gem 'jsonapi-serializer'
 gem 'figaro'
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'
