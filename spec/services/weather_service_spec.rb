@@ -73,6 +73,8 @@ RSpec.describe WeatherService do
     result[:hourly].each do |hour|
       expect(hour).to have_key(:dt)
       expect(hour[:dt]).to be_a(Numeric)
+      expect(hour).to have_key(:temp)
+      expect(hour[:temp]).to be_a(Numeric)
       expect(hour).to have_key(:wind_speed)
       expect(hour[:wind_speed]).to be_a(Numeric)
       expect(hour).to have_key(:wind_deg)

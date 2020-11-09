@@ -55,6 +55,8 @@ RSpec.describe Forecast do
     forecast.hourly_weather.each do |hour|
       expect(hour).to have_key(:time)
       expect(hour[:time]).to be_a(String)
+      expect(hour).to have_key(:temp)
+      expect(hour[:temp]).to be_a(Numeric)
       expect(hour).to have_key(:wind_speed)
       expect(hour[:wind_speed]).to be_a(String)
       expect(hour).to have_key(:wind_direction)
