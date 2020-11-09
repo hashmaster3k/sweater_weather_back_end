@@ -36,7 +36,7 @@ class Forecast
   def hourly_data(data)
     data.map do |hour|
       { time: Time.zone.at(hour[:dt]).strftime('%H:%M:%S'),
-        temp: hour[:temp],
+        predicted_temp: hour[:temp],
         wind_speed: "#{hour[:wind_speed]} mph",
         wind_direction: "from #{wind_direction(hour[:wind_deg])}",
         conditions: hour[:weather].first[:description],
