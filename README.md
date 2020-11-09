@@ -11,7 +11,7 @@
   - [Deployment](#deployment)
   - [Endpoints](#endpoints)
     - [GET Forecast](#get-forecast---weather-for-location)
-    - [GET Background](#get-background---image-for-location)
+    - [GET Background](#get-backgrounds---image-for-location)
 
 ## Getting Started
 
