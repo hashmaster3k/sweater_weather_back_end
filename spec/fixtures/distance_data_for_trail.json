@@ -1,0 +1,493 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -104.982323,
+                "lat": 39.738453
+            },
+            "ul": {
+                "lng": -105.257965,
+                "lat": 39.95816
+            }
+        },
+        "distance": 28.649,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "00:35:21",
+        "sessionId": "5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+        "hasAccessRestriction": false,
+        "realTime": 2149,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 1.31,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": true,
+                "destNarrative": "",
+                "distance": 28.649,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "00:35:21",
+                "origIndex": 2,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": -1,
+                "time": 2121,
+                "hasUnpaved": false,
+                "origNarrative": "Go west on E Colfax Ave/I-70 Bus W/US-40 W/US-287 N.",
+                "maneuvers": [
+                    {
+                        "distance": 0.135,
+                        "streets": [
+                            "E 14th Ave"
+                        ],
+                        "narrative": "Start out going east on E 14th Ave toward N Grant St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -104.984856,
+                            "lat": 39.738453
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:23",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.73845291137695,-104.98485565185547|marker-1||39.73845291137695,-104.9823226928711|marker-2||&center=39.73845291137695,-104.98358917236328&defaultMarker=none&zoom=13&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 23,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.11,
+                        "streets": [
+                            "N Logan St"
+                        ],
+                        "narrative": "Turn left onto N Logan St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -104.982323,
+                            "lat": 39.738453
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:21",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.73845291137695,-104.9823226928711|marker-2||39.740047454833984,-104.98233795166016|marker-3||&center=39.73925018310547,-104.98233032226562&defaultMarker=none&zoom=12&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 21,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 1.482,
+                        "streets": [
+                            "E Colfax Ave",
+                            "I-70 Bus W",
+                            "US-40 W",
+                            "US-287 N"
+                        ],
+                        "narrative": "Turn left onto E Colfax Ave/I-70 Bus W/US-40 W/US-287 N.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -104.982338,
+                            "lat": 39.740047
+                        },
+                        "index": 2,
+                        "formattedTime": "00:03:12",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "70",
+                                "type": 5,
+                                "url": "http://icons.mqcdn.com/icons/rs5.png?n=70&d=WEST",
+                                "direction": 7
+                            },
+                            {
+                                "extraText": "",
+                                "text": "40",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=40&d=WEST",
+                                "direction": 7
+                            },
+                            {
+                                "extraText": "",
+                                "text": "287",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=287&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.740047454833984,-104.98233795166016|marker-3||39.7403450012207,-105.00968170166016|marker-4||&center=39.740196228027344,-104.99600982666016&defaultMarker=none&zoom=10&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 192,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0.101,
+                        "streets": [],
+                        "narrative": "Take the ramp toward I-25/Ft Collins/Colo Spgs.",
+                        "turnType": 12,
+                        "startPoint": {
+                            "lng": -105.009682,
+                            "lat": 39.740345
+                        },
+                        "index": 3,
+                        "formattedTime": "00:00:12",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.7403450012207,-105.00968170166016|marker-4||39.740570068359375,-105.01155853271484|marker-5||&center=39.74045753479004,-105.0106201171875&defaultMarker=none&zoom=14&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 12,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_ramp_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 6.391,
+                        "streets": [
+                            "I-25 N",
+                            "US-87 N"
+                        ],
+                        "narrative": "Merge onto I-25 N/US-87 N toward Ft Collins.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -105.011559,
+                            "lat": 39.74057
+                        },
+                        "index": 4,
+                        "formattedTime": "00:07:29",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "25",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=25&d=NORTH",
+                                "direction": 1
+                            },
+                            {
+                                "extraText": "",
+                                "text": "87",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=87&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.740570068359375,-105.01155853271484|marker-5||39.821102142333984,-104.98251342773438|marker-6||&center=39.78083610534668,-104.99703598022461&defaultMarker=none&zoom=7&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 449,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 14.113,
+                        "streets": [
+                            "US-36 W"
+                        ],
+                        "narrative": "Merge onto US-36 W via EXIT 217A on the left toward Boulder.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -104.982513,
+                            "lat": 39.821102
+                        },
+                        "index": 5,
+                        "formattedTime": "00:13:46",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "36",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=36&d=WEST",
+                                "direction": 7
+                            },
+                            {
+                                "extraText": "",
+                                "text": "217A",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=217A&d=LEFT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.821102142333984,-104.98251342773438|marker-6||39.95561981201172,-105.16075134277344|marker-7||&center=39.88836097717285,-105.0716323852539&defaultMarker=none&zoom=6&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 826,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0.327,
+                        "streets": [],
+                        "narrative": "Take the McCaslin Blvd exit toward CO-170 W/Louisville/Superior.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -105.160751,
+                            "lat": 39.95562
+                        },
+                        "index": 6,
+                        "formattedTime": "00:00:34",
+                        "directionName": "Northwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.95561981201172,-105.16075134277344|marker-7||39.958160400390625,-105.16539001464844|marker-8||&center=39.95689010620117,-105.16307067871094&defaultMarker=none&zoom=12&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 34,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 2
+                    },
+                    {
+                        "distance": 0.161,
+                        "streets": [
+                            "S McCaslin Blvd"
+                        ],
+                        "narrative": "Turn slight left onto S McCaslin Blvd.",
+                        "turnType": 7,
+                        "startPoint": {
+                            "lng": -105.16539,
+                            "lat": 39.95816
+                        },
+                        "index": 7,
+                        "formattedTime": "00:00:21",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.958160400390625,-105.16539001464844|marker-8||39.955894470214844,-105.16584777832031|marker-9||&center=39.957027435302734,-105.16561889648438&defaultMarker=none&zoom=12&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 21,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 3.798,
+                        "streets": [
+                            "CO-170"
+                        ],
+                        "narrative": "Turn right onto Marshall Rd/CO-170. Continue to follow CO-170.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -105.165848,
+                            "lat": 39.955894
+                        },
+                        "index": 8,
+                        "formattedTime": "00:05:50",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "170",
+                                "type": 505,
+                                "url": "http://icons.mqcdn.com/icons/rs505.png?n=170",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.955894470214844,-105.16584777832031|marker-9||39.95616912841797,-105.22908782958984|marker-10||&center=39.956031799316406,-105.19746780395508&defaultMarker=none&zoom=8&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 350,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 2.031,
+                        "streets": [
+                            "Eldorado Springs Dr",
+                            "CO-170"
+                        ],
+                        "narrative": "Turn left onto Eldorado Springs Dr/CO-170.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -105.229088,
+                            "lat": 39.956169
+                        },
+                        "index": 9,
+                        "formattedTime": "00:03:13",
+                        "directionName": "Southwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "170",
+                                "type": 505,
+                                "url": "http://icons.mqcdn.com/icons/rs505.png?n=170",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=aAGgz7AhdGGKiyn71pXZOEGPJ50aKtQp&size=225,160&locations=39.95616912841797,-105.22908782958984|marker-10||39.938262939453125,-105.25796508789062|marker-11||&center=39.94721603393555,-105.24352645874023&defaultMarker=none&zoom=9&rand=991165971&session=5fa975c2-015f-5f21-02b4-32b8-0a0663930859",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 193,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 6
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "4017 ELDORADO SPRINGS DR is on the right.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -105.257965,
+                            "lat": 39.938263
+                        },
+                        "index": 10,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -104.984853,
+                    "lat": 39.738453
+                },
+                "adminArea4": "Denver",
+                "adminArea5": "Denver",
+                "postalCode": "80203",
+                "adminArea1": "US",
+                "adminArea3": "CO",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "B1AAA",
+                "adminArea4Type": "County",
+                "linkId": 35096579,
+                "street": "N Sherman St",
+                "adminArea5Type": "City",
+                "geocodeQuality": "STREET",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -104.984853,
+                    "lat": 39.738453
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -105.2582,
+                    "lat": 39.9388
+                },
+                "adminArea4": "Boulder",
+                "adminArea5": "Boulder",
+                "postalCode": "80303",
+                "adminArea1": "US",
+                "adminArea3": "CO",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "L1AAA",
+                "adminArea4Type": "County",
+                "linkId": 59991201,
+                "street": "4017 Eldorado Springs Dr",
+                "adminArea5Type": "City",
+                "geocodeQuality": "ADDRESS",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -105.2582,
+                    "lat": 39.9388
+                }
+            }
+        ],
+        "time": 2121,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2020 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2020 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}
