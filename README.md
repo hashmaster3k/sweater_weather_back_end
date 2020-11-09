@@ -10,6 +10,8 @@
   - [Testing](#running-tests)
   - [Deployment](#deployment)
   - [Endpoints](#endpoints)
+    -[GET Forecast](#get-forecast---weather-for-location)
+    -[GET Background](#get-background---image-for-location)
 
 ## Getting Started
 
@@ -230,3 +232,29 @@ Example response:
     }
 }
 ```
+
+### ```GET /backgrounds``` - image for location
+
+Returns a single image url and source of image in JSON format. Enter location as name/value pair in parameters as shown below in the example.
+
+Example request:
+```
+GET /api/v1/backgrounds?location=denver,co
+Content-Type: application/json
+Accept: application/json
+```
+
+Example response:
+```json
+{
+    "data": {
+        "id": null,
+        "type": "image",
+        "attributes": {
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Downtown_Fort_Collins_Colorado.jpg",
+            "source": "bing search"
+        }
+    }
+}
+```
+
