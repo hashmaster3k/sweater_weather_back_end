@@ -11,6 +11,7 @@ gem 'json'
 gem 'jsonapi-serializer'
 gem 'figaro'
 gem 'faraday'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'pry'
