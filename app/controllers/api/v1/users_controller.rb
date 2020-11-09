@@ -15,10 +15,10 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def errors(user)
-    error_list = 'Error: '
-    user.errors.messages.each do |message|
-      error_list.concat("#{message.first} #{message.second.first}")
-    end
-    error_list
+    errors = user.errors.messages
+    error_list = errors.map do |message|
+      " #{message.first} #{message.second.first}"
+    end.join(',')
+    "Error:#{error_list}"
   end
 end
