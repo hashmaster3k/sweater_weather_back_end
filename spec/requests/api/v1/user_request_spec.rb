@@ -50,5 +50,19 @@ RSpec.describe 'User API' do
       expect(response.status).to eq(400)
       expect(response.body).to eq('Error: email has already been taken')
     end
+
+    it 'passwords do not match' do
+      headers = { 'Content-Type': 'application/json',
+                  'Accept': 'application/json' }
+
+      body = { 'email': 'whatever@example.com',
+               'password': 'password',
+               'password_confirmation': 'wordpass' }
+
+      post "/api/v1/users", headers: headers, params: JSON.generate(body)
+
+      expect(response.status).to eq(400)
+      expect(response.body).to eq("Error: password_confirmation doesn't match Password")
+    end
   end
 end
