@@ -1,10 +1,10 @@
 class Api::V1::UsersController < ApplicationController
   def create
     user = UserFacade.create(user_params)
-    unless user.id == nil
-      render json: UserSerializer.new(user), status: 201
+    if user.id.nil?
+      render json: errors(user), status: :bad_request
     else
-      render json: errors(user), status: 400
+      render json: UserSerializer.new(user), status: :created
     end
   end
 
@@ -17,7 +17,7 @@ class Api::V1::UsersController < ApplicationController
   def errors(user)
     error_list = 'Error: '
     user.errors.messages.each do |message|
-      error_list.concat("#{message.first.to_s} #{message.second.first}")
+      error_list.concat("#{message.first} #{message.second.first}")
     end
     error_list
   end
