@@ -1,6 +1,15 @@
 class UserFacade
-  def self.create(params)
-    User.create(params.merge(api_key: unique_api_key))
+  def self.auth(user_info)
+    user = User.find_by(email: user_info[:email])
+
+    if user && user.authenticate(user_info[:password])
+      user
+    else
+    end
+  end
+
+  def self.create(user_info)
+    User.create(user_info.merge(api_key: unique_api_key))
   end
 
   private_class_method def self.unique_api_key
