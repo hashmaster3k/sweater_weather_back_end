@@ -14,6 +14,7 @@
     - [GET Background](#get-backgrounds---image-for-location)
     - [POST Users](#post-users---create-new-user)
     - [POST Sessions](#post-sessions---user-authentication)
+    - [POST Road Trip]()
 
 ## Getting Started
 
@@ -316,6 +317,43 @@ Example response:
     "attributes": {
       "email": "whatever@example.com",
       "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
+### ```POST /road_trip``` - road trip information
+
+Returns JSON information of road trip. Weather data returned is the predicted temperature and conditions when arriving at destination. Must pass parameters in body in json format. See example below. Returns 401 code if api_key is incorrect.
+
+Example request:
+```
+POST /api/v1/road_trip
+Content-Type: application/json
+Accept: application/json
+
+body:
+
+{
+  "origin": "Denver,CO",
+  "destination": "Pueblo,CO",
+  "api_key": "jgn983hy48thw9begh98h4539h4"
+}
+```
+
+Example response:
+```json
+{
+  "data": {
+    "id": null,
+    "type": "roadtrip",
+    "attributes": {
+      "start_city": "Denver, CO",
+      "end_city": "Estes Park, CO",
+      "travel_time": "2 hours, 13 minutes"
+      "weather_at_eta": {
+        "temperature": 59.4,
+        "conditions": "partly cloudy with a chance of meatballs"
+      }
     }
   }
 }
