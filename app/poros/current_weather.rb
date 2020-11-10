@@ -9,7 +9,7 @@ class CurrentWeather
               :visibility,
               :conditions,
               :icon
-              
+
   def initialize(data)
     @datetime = Time.zone.at(data[:dt])
     @sunrise = Time.zone.at(data[:sunrise])
