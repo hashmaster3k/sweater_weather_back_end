@@ -11,10 +11,10 @@ class RoadTrip
 
   def weather(weather_info)
     unless @travel_time == 'impossible route'
-    {
-      temperature: weather_info.predicted_temp,
-      conditions: weather_info.conditions
-    }
+      {
+        temperature: weather_info.predicted_temp,
+        conditions: weather_info.conditions
+      }
     end
   end
 end

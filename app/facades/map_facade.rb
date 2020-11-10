@@ -32,5 +32,4 @@ class MapFacade
   private_class_method def self.total_hours(time_seconds)
     time_seconds / 3600
   end
-
 end
