@@ -30,6 +30,31 @@ RSpec.describe 'User API' do
       expect(parsed[:data][:attributes]).to have_key(:api_key)
       expect(parsed[:data][:attributes][:api_key]).to be_a(String)
     end
+    it 'can create a new user without duplicating api_key' do
+      existing_key = SecureRandom.hex
+
+      SecureRandom.stub(:hex).and_return(existing_key, '1234567')
+
+      User.create!( email: 'whatever@example.com',
+                    password: 'password',
+                    api_key: existing_key)
+
+      headers = { 'Content-Type': 'application/json',
+                  'Accept': 'application/json' }
+
+      body = { 'email': 'john@example.com',
+               'password': 'password',
+               'password_confirmation': 'password' }
+
+      post "/api/v1/users", headers: headers, params: JSON.generate(body)
+
+      expect(response).to be_successful
+      expect(response.status).to eq(201)
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed[:data][:attributes][:api_key]).to_not eq(existing_key)
+    end
   end
 
   describe 'sad paths' do
