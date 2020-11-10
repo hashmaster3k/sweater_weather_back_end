@@ -13,6 +13,7 @@
     - [GET Forecast](#get-forecast---weather-for-location)
     - [GET Background](#get-backgrounds---image-for-location)
     - [POST Users](#post-users---create-new-user)
+    - [POST Sessions](#)
 
 ## Getting Started
 
@@ -289,3 +290,34 @@ Example response:
   }
 }
 ```
+
+### ```POST /sessions``` - user authentication
+
+Returns JSON information of existing user if user exists and their password is correct. Must pass parameters in body in json format. See example below. Returns appropriate 400-status code if user's credentials are incorrect.
+
+Example request:
+```
+POST /api/v1/sessions
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "whatever@example.com",
+  "password": "password"
+}
+```
+
+Example response:
+```json
+{
+  "data": {
+    "type": "users",
+    "id": "1",
+    "attributes": {
+      "email": "whatever@example.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
+
