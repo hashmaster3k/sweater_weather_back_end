@@ -12,6 +12,7 @@
   - [Endpoints](#endpoints)
     - [GET Forecast](#get-forecast---weather-for-location)
     - [GET Background](#get-backgrounds---image-for-location)
+    - [POST Users](#post-users---create-new-user)
 
 ## Getting Started
 
