@@ -29,6 +29,7 @@ group :test do
   gem 'rubocop', require: false
   gem 'shoulda-matchers', '~> 4.0'
   gem 'webmock'
+  gem 'mocha'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
