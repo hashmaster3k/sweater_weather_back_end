@@ -2,6 +2,28 @@ require 'rails_helper'
 
 RSpec.describe UserFacade do
   describe 'happy path' do
+    it 'should find user by api key' do
+      api_key = SecureRandom.hex
+      User.create!( email: 'whatever@example.com',
+                    password: 'password',
+                    api_key: api_key )
+
+      result = UserFacade.auth_key(api_key)
+      expect(result).to be_a(User)
+    end
+
+    it 'should return user if exists and password is right' do
+      api_key = SecureRandom.hex
+      user_params = { email: 'whatever@example.com',
+                      password: 'password',
+                      api_key: api_key }
+
+      User.create!(user_params)
+
+      result = UserFacade.auth(user_params)
+      expect(result).to be_a(User)
+    end
+
     it 'should return a saved user object' do
       params = {
                 "email": "john@example.com",
