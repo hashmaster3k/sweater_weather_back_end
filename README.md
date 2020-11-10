@@ -258,3 +258,33 @@ Example response:
 }
 ```
 
+### ```POST /users``` - create new user
+
+Returns JSON information of newly created user. Must pass parameters in body in json format. See example below. Returns appropriate 400-status code if user is not created in system.
+
+Example request:
+```
+POST /api/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "whatever@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+```
+
+Example response:
+```json
+{
+  "data": {
+    "type": "users",
+    "id": "1",
+    "attributes": {
+      "email": "whatever@example.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
