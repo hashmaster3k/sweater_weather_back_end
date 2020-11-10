@@ -14,7 +14,7 @@
     - [GET Background](#get-backgrounds---image-for-location)
     - [POST Users](#post-users---create-new-user)
     - [POST Sessions](#post-sessions---user-authentication)
-    - [POST Road Trip]()
+    - [POST Road Trip](#post-road_trip---road-trip-information)
 
 ## Getting Started
 
