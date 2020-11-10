@@ -1,11 +1,7 @@
 class UserFacade
   def self.auth(user_info)
     user = User.find_by(email: user_info[:email])
-
-    if user && user.authenticate(user_info[:password])
-      user
-    else
-    end
+    return user if user && user.authenticate(user_info[:password])
   end
 
   def self.create(user_info)

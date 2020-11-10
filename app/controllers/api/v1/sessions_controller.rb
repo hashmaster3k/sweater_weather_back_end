@@ -1,7 +1,11 @@
 class Api::V1::SessionsController < ApplicationController
   def create
     user = UserFacade.auth(user_params)
-    render json: UserSerializer.new(user)
+    if user.nil?
+      render json: { error: 'invalid credentials' }, status: :unauthorized
+    else
+      render json: UserSerializer.new(user)
+    end
   end
 
   private
