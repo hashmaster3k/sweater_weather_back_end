@@ -12,6 +12,7 @@ gem 'jsonapi-serializer'
 gem 'figaro'
 gem 'faraday'
 gem 'bcrypt'
+gem 'bundler'
 
 group :development, :test do
   gem 'pry'

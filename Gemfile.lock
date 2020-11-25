@@ -203,6 +203,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   bootsnap (>= 1.1.0)
+  bundler
   faraday
   figaro
   json
