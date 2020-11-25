@@ -8,12 +8,12 @@ jobs:
       - image: circleci/ruby:2.5.3-stretch-node
         environment:
           PGHOST: 127.0.0.1
-          PGUSER: sweater_weather_back_end-test
+          PGUSER: sweater_weather_back_end
           RAILS_ENV: test
       - image: circleci/postgres:9.5-alpine
         environment:
           POSTGRES_USER: sweater_weather_back_end
-          POSTGRES_DB: sweater_weather_back_end-test
+          POSTGRES_DB: sweater_weather_back_end_test
           POSTGRES_PASSWORD: ""
     executor: ruby/default
     steps:
