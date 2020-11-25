@@ -1,6 +1,10 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@0.1.2 
+  ruby: circleci/ruby@0.1.2
+
+dependencies:
+  pre:
+    - gem install bundler
 
 jobs:
   build:
