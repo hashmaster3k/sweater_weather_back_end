@@ -19,7 +19,9 @@ jobs:
       - ruby/bundle-install
       - run:
           name: DB Setup
-          command: rails db:{create,migrate,seed}
+          command: rails db:create
+          command: rails db:migrate
+          command: rails db:seed
       - run:
           name: Testing
           command: bundle exec rspec
