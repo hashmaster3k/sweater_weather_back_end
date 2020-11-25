@@ -18,6 +18,7 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
+
       - run:
           name: Force Bundler Version
           command: |
@@ -25,13 +26,16 @@ jobs:
             echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
             source $BASH_ENV
             gem install bundler
+
       - ruby/bundle-install
+
       - run:
           name: DB Setup
           command: |
             bundle exec rake db:create
             bundle exec rake db:migrate
             bundle exec rake db:seed
+            
       - run:
           name: Testing
           command: bundle exec rspec
