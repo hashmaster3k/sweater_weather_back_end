@@ -358,4 +358,3 @@ Example response:
   }
 }
 ```
-
