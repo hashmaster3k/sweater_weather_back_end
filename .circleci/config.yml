@@ -20,9 +20,9 @@ jobs:
       - run:
           name: DB Setup
           command: |
-            bundle rake db:create
-            bundle rake db:migrate
-            bundle rake db:seed
+            bundle exec rake db:create
+            bundle exec rake db:migrate
+            bundle exec rake db:seed
       - run:
           name: Testing
           command: bundle exec rspec
